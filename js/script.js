@@ -27,17 +27,6 @@ $(function () {
         }
     });
 
-    // ================= 모바일 메뉴 보기/가리기 =============
-    // $(".searchToggle li").eq(1).click(function () {
-    //     $(".m_menu").show();
-    //     $(".searchToggle li").hide();
-    // });
-
-    // $(".m_menu li").eq(4).click(function () {
-    //     $(".m_menu").hide();
-    //     $(".searchToggle li").show();
-    // });
-
     // ============= 메인 비디오 인트로 메뉴에서 각 섹션별로 이동 ===============
     $(".company").on("click", () => {
         $("html,body").stop().animate({
