@@ -82,7 +82,7 @@ header .headerInner nav .inner>ul.nav-list>li>a:focus { color: #8DC63F; }
 
 .slicknav_nav .slicknav_item a { padding: 0; margin: 0; } 
 
-.slicknav_nav a { display: block; color: #1e1e1e; font-size: 18px; font-family: 'Nanum Gothic', sans-serif; font-weight: bold; letter-spacing: -1px; padding: 20px; } 
+.slicknav_nav a { display: block; color: #1e1e1e; font-size: 18px; font-family: 'Nanum Gothic', sans-serif; font-weight: bold; letter-spacing: -1px; padding: 20px 30px; } 
 
 .slicknav_menu:before,
 .slicknav_menu:after { content: " "; display: table; } 
