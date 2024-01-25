@@ -15,8 +15,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
     <script src="./js/jquery-1.11.3.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/jquery.effects.core.js"></script>
+    <script src="./js/jquery.slicknav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.2/dist/wow.min.js"></script>
+    <script src="./js/script.js"></script>
     <script>
         new WOW().init(); // wow객체 만들고 이를 초기화!! 하는 스크립트 코드임.
         // new 키워드 >> 새로운 객체 만들때 사용
@@ -35,11 +37,12 @@
                     <a href="./index.html"><img src="./images/logo.png" alt="로고"></a>
                 </h1>
                 <!-- pc menu -->
-                <nav class="menu">
-                    <ul>
-                        <li>
+                <nav class="nav">
+                    <div class="inner">
+                    <ul id="menu" class="nav-list">
+                        <li class="in_menu01">
                             <a href="#">회사소개</a>
-                            <ul class="submenu">
+                            <ul>
                                 <li><a href="#">총괄CEO인사말</a></li>
                                 <li><a href="#">CI소개</a></li>
                                 <li><a href="#">연혁</a></li>
@@ -50,9 +53,9 @@
                                 <li><a href="#">투자정보</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="in_menu02">
                             <a href="#">바른먹거리</a>
-                            <ul class="submenu">
+                            <ul>
                                 <li><a href="#">지속가능 식생활</a></li>
                                 <li><a href="#">지속가능식품</a></li>
                                 <li><a href="#">바른먹거리 원칙</a></li>
@@ -60,18 +63,18 @@
                                 <li><a href="#">풀무원 지구식단</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="in_menu03">
                             <a href="#">사회책임경영</a>
-                            <ul class="submenu">
+                            <ul>
                                 <li><a href="#">개요</a></li>
                                 <li><a href="#">추진전략</a></li>
                                 <li><a href="#">활동 및 실적</a></li>
                                 <li><a href="#">수상</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="in_menu04">
                             <a href="#">뉴스룸</a>
-                            <ul class="submenu">
+                            <ul>
                                 <li><a href="#">풀무원뉴스</a></li>
                                 <li><a href="#">ESG경영</a></li>
                                 <li><a href="#">멀티미디어</a></li>
@@ -79,15 +82,11 @@
                             </ul>
                         </li>
                     </ul>
+                </div>
                 </nav>
-                <ul class="m_menu">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">바른먹거리</a></li>
-                    <li><a href="#">사회책임경영</a></li>
-                    <li><a href="#">뉴스룸</a></li>
-                    <!-- x 버튼 -->
-                    <li><a href="#"><i class="fa-regular fa-xmark"></i></a></li>
-                </ul>
+                <div id="mobile_menu">
+                    <h1><a href="./index.html"><img src="./images/logo.png" alt="모바일 로고"></a></h1>
+                </div>
                 <!-- pc search,lang -->
                 <div class="searchLang">
                     <div class="search">
@@ -100,13 +99,6 @@
                         <li><a href="#"><i class="fa-duotone fa-caret-down"></i>
                             </a>
                         </li>
-                    </ul>
-                </div>
-                <!-- mobile search, toggle -->
-                <div class="searchToggle">
-                    <ul>
-                        <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                        <li><a href="#"><i class="fa-regular fa-bars"></i></a></li>
                     </ul>
                 </div>
                 <div class="right_menu">
